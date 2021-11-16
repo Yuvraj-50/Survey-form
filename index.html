@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+    <section>
+        <header>
+            <h1 id="title">Free Code Camp survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+    </section>
+
+    <section class="second-part">
+        <form id="survey-form">
+            <!-- name -->
+            <div class="input-form">
+                <label id="name-label" for="name">Name</label>
+                <input class="form-input" type="text" id="name" name="Your name" placeholder="Enter your name">
+            </div>
+            <!-- email -->
+            <div class="input-form">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="Enter Your mail id">
+            </div>
+            <!-- age -->
+            <div class="input-form">
+                <label id="number-label" for="number">Age <span>(optional)</span></label>
+                <input class="form-input" type="number" id="number" placeholder="Age" min="1" max="99">
+            </div>
+
+            <!-- dropdown -->
+            <div class="input-form">
+                <p class="form-para">which option suits the best for you?</p>
+                <select class="form-input" name="role" id="drop-down" required>
+                    <option disabled selected value>select your current role</option>
+                    <option value="student">student</option>
+                    <option value="ful-time-job">full time job</option>
+                    <option value="full-time-learner">full time learner</option>
+                    <option value="prefer not to say ">prefer not to say</option>
+                    <option value="else">else</option>
+                </select>
+            </div>
+
+            <!-- radio buttons -->
+            <div class="input-form">
+                <p class="form-para">would you recommend free code camp to your friend?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" checked />Definitely</label>
+
+                <label>
+                    <input type="radio" value="maybe" name="user-recommend">Maybe
+                </label>
+
+                <label><input type="radio" value="maybe not" name="user-recommend"> Maybe not</label>
+            </div>
+
+            <!-- checkbox -->
+            <div class="input-form">
+                <p class="form-para">What would you like to see improved</p>
+                <label>
+                    <input type="checkbox" value="frontend" name="prefer" checked>Frontend
+                </label>
+                <label>
+                    <input type="checkbox" value="Backend" name="   prefer">Backend
+                </label>
+                <label>
+                    <input type="checkbox" value="Data-visualiation" name="   prefer">Data-visualition
+                </label>
+                <label>
+                    <input type="checkbox" value="Challenges" name="  prefer">Challenges
+                </label>
+                <label>
+                    <input type="checkbox" value="Open-source-community" name="prefer">Open source community
+                </label>
+                <label>
+                    <input type="checkbox" value="videos" name="prefer">videos
+                </label>
+
+
+            </div>
+
+
+            <div class="input-forms">
+                <p class="form-para">Any comments or suggestions</p>
+
+                <label for="suggestions">
+                    <textarea class="form-input" rows="5" name="text-area" id="Any-suggestions" placeholder="write your suggestion here...." ></textarea>
+                </label>
+            </div>
+
+            <div class="input-form">
+                <button class="form-input" type="button" id="submit">submit</button>
+            </div>
+
+
+        </form>
+    </section>
+
+</div>
+</body>
+
+</html>

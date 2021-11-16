@@ -1,0 +1,111 @@
+body{
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.4;
+    margin:0;
+}
+
+
+body::before{
+    content: '';
+    position: fixed;
+     top: 0;
+    left: 0; 
+    height: 100%;
+    width: 100%; 
+    z-index: -1;
+    background-image: linear-gradient(
+        115deg,
+       rgba(187,234,226,0.5 ),
+        rgba(182,223,246 ,0.5)
+      ),
+    url(images/man.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: 0;
+}
+
+h1{
+    font-size: 2rem;
+    
+}
+
+p{
+    font-size: 1.2rem;
+    color: rgb(86, 86, 104);
+}
+#description{
+    font-family: cursive;
+    font-size: 1.2rem;
+    
+}
+
+header{
+    text-align: center;
+}
+
+label{
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+input , select , textarea , button{
+    margin:0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 1.25rem;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width : 576px) {
+    .container{
+        max-width : 540px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    
+}
+#survey-form{
+    background-color: rgba(155,193,227, 0.7);
+    padding: 2.5rem 0.65rem;
+    margin: auto;
+}
+
+.input-form{
+    color:white;
+}
+
+.form-para{
+    color: rgb(255, 255, 255);
+}
+
+.form-input{
+    width: 100%;
+    height: 2rem;
+}
+
+button{
+    background-color: rgb(135, 135, 236);
+    border: 0;
+    padding: 0.5rem;
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 1.25rem;
+}
+
+button:hover{
+    background-color:rgb(105, 105, 245);
+}
